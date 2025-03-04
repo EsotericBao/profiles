@@ -3,3 +3,21 @@ chsh -s $(which zsh)
 #LOGOUT and choose 0
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#PLUGINS#
+#PATH = ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+1) Highlight ---
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git PATH
+echo "source PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+2) Autocomplete ---
+git clone https://github.com/zsh-users/zsh-autosuggestions PATH
+
+
+
+#plugins=( 
+#    # other plugins...
+#    zsh-autosuggestions
+#)
+
+
