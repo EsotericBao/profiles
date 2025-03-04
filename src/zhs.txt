@@ -1,0 +1,5 @@
+sudo apt install zsh
+chsh -s $(which zsh)
+#LOGOUT and choose 0
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
